@@ -1,0 +1,166 @@
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: #ecf4ff;
+  color: #1c1c1c;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  border-radius: 40px;
+  margin: 32px;
+  padding: 32px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 8px 16px;
+  background: #ecf4ff;
+  border-radius: 100px;
+}
+
+.portfolio {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.projetos {
+  max-height: 500px;
+  overflow: auto;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 8px 32px;
+}
+
+.conquistas {
+  height: 500px;
+  overflow: auto;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 32px;
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.conquistas ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.conquistas li {
+  list-style: none;
+}
+
+.conquistas img {
+  max-height: 150px;
+  padding: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border: 1.8px solid #1c1c1c;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ecf4ff;
+}
+
+::-webkit-scrollbar-track {
+  background: #ecf4ff;
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+  margin: 15px 0px;
+}
+
+.projetos-titulo {
+  font-weight: 700;
+  font-size: 36px;
+  list-style: none;
+}
+
+.projetos-item {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 10px; /*distância entre cada linha*/
+}
+
+/*Toda tag A será estilizada aqui*/
+.projetos-item a {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+/*Estilização da classe dark após chamar a função mudaTema()*/
+.dark {
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+
+/*container da classe dark quando chama a função mudaTema()*/
+.dark .container {
+  background: #333439;
+  color: #f7f7f7;
+}
+
+/*projetos da classe dark quando chama a função mudaTema()*/
+.dark .projetos {
+  color: #1c1c1c;
+}
+
+/*botão da classe dark quando chama a função mudaTema()*/
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 2px solid #f7f7f7;
+}
